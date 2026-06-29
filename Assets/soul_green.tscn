@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dcfu4tca0ghdq"]
+
+[ext_resource type="Script" uid="uid://de0j1f2c0dfwv" path="res://Scripts/soul_green.gd" id="1_2jar3"]
+[ext_resource type="Texture2D" uid="uid://jtu4cbqgynml" path="res://player.png" id="2_oq2xj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f6qp0"]
+size = Vector2(56, 56)
+
+[node name="Soul_Green" type="CharacterBody2D" unique_id=782487579 node_paths=PackedStringArray("Sprite")]
+script = ExtResource("1_2jar3")
+Sprite = NodePath("Player")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=65211457]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_f6qp0")
+
+[node name="Player" type="Sprite2D" parent="." unique_id=985072792]
+texture_filter = 1
+scale = Vector2(4, 4)
+texture = ExtResource("2_oq2xj")

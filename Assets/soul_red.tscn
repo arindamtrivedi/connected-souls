@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://gb0pvoesr555"]
+
+[ext_resource type="Script" uid="uid://bmvkriv40sffj" path="res://Scripts/soul_red.gd" id="1_acc40"]
+[ext_resource type="Texture2D" uid="uid://dixo1qdk723ku" path="res://emenemy.png" id="2_nmw4d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n0byx"]
+size = Vector2(56, 56)
+
+[node name="Soul_Red" type="CharacterBody2D" unique_id=105344746 node_paths=PackedStringArray("Sprite")]
+script = ExtResource("1_acc40")
+Sprite = NodePath("Emenemy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=731680160]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_n0byx")
+
+[node name="Emenemy" type="Sprite2D" parent="." unique_id=2002659011]
+texture_filter = 1
+scale = Vector2(4, 4)
+texture = ExtResource("2_nmw4d")

@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://cu3447dvi5u2h"]
+
+[ext_resource type="PackedScene" uid="uid://baxy81o0d3f2a" path="res://Assets/map.tscn" id="1_cml0w"]
+
+[node name="SPIKES" unique_id=35075135 groups=["SPIKES"] instance=ExtResource("1_cml0w")]

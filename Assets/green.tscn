@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bnge5vlxp8ett"]
+
+[ext_resource type="Script" uid="uid://bhtornpf35net" path="res://Scripts/green.gd" id="1_p3tsd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lb14o"]
+size = Vector2(56, 56)
+
+[node name="Green" type="Area2D" unique_id=696669138 node_paths=PackedStringArray("Master")]
+script = ExtResource("1_p3tsd")
+Master = NodePath("")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=492960002]
+shape = SubResource("RectangleShape2D_lb14o")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
